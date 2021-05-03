@@ -26,7 +26,5 @@ router.get('/get-image/:image', Articlecontroller.getImage);
 router.get('/search/:cadena', Articlecontroller.search);
 
 
-
-
 /*CON ESTO SE EXPORTAN LAS RUTAS Y SE PUEDEN CARGAR EN CUALQUIER ARCHIVO */
 module.exports = router;

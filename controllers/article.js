@@ -9,8 +9,6 @@ const fs = require('fs');
 const path = require('path');
 
 
-
-
 let controller = {
     datosCurso: (req,res)=>{
         return res.status(200).send({

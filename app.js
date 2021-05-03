@@ -14,7 +14,6 @@ var app = express();
 const routes = require('./routes/routes');
 
 
-
 // MIDDLEWARES
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());     /*ESTO ES PARA QUE CUALQUIER TIPO DE PETICION LLEGUE AL SERVIDOR SEA 
