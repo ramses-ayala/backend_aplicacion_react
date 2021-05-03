@@ -19,7 +19,7 @@ const routes = require('./routes/routes');
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());     /*ESTO ES PARA QUE CUALQUIER TIPO DE PETICION LLEGUE AL SERVIDOR SEA 
                                 CONVERTIDA A UN ARCHIVO JSON */
-app.set('port', process.env.PORT | 3001);
+app.set('port', process.env.PORT | 3000);
 
 
 
