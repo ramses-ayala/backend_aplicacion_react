@@ -8,7 +8,7 @@ mongoose.set('useFindAndModify',false); /* DESACTIVAR METODOS ANTIGUOS DE MONGOO
                                         
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/api_rest_blog',{useNewUrlParser: true, useUnifiedTopology:true})
+mongoose.connect('mongodb+srv://ramses:agr950510@servidor.idpx8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology:true})
     .then(()=>{
         console.log('CONEXION A LA BASE DE DATOS EXITOSA');
 
@@ -22,5 +22,7 @@ mongoose.connect('mongodb://localhost:27017/api_rest_blog',{useNewUrlParser: tru
 
 
 
-
+/*
+    mongodb://localhost:27017/api_rest_blog
+*/
 
