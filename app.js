@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 app.use('/api', routes);
 
 
-app.listen(app.get('port'),()=>{
+app.listen(app.get('port'),"0.0.0.0",()=>{
     console.log('servidor ejecutandose en el puerto: ' + app.get('port'));
 });
 
