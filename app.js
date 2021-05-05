@@ -3,11 +3,13 @@
 // CARGAR MODULOS
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const conectarDB = require("./config/db");
 
 // EJECUTAR EXPRESS
 var app = express();
 
+// CONECTAR A BD
+conectarDB();
 
 
 // CARGAR FICHEROS  DE RUTAS
@@ -38,6 +40,11 @@ app.use((req, res, next) => {
 
 // AGREGAR PREJIJOS A RUTAS / CARGAR RUTAS
 app.use('/api', routes);
+
+
+app.listen(app.get('port'),()=>{
+    console.log('servidor ejecutandose en el puerto: ' + app.get('port'));
+});
 
 
 // EXPORTAR MODULO (FICHERO ACTUAL)
